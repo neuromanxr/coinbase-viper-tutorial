@@ -14,6 +14,19 @@
 		50303C392166A332004E15A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50303C372166A332004E15A2 /* LaunchScreen.storyboard */; };
 		50303C442166A332004E15A2 /* viper_tutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C432166A332004E15A2 /* viper_tutorialTests.swift */; };
 		50303C4F2166A332004E15A2 /* viper_tutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C4E2166A332004E15A2 /* viper_tutorialUITests.swift */; };
+		50303C642166C847004E15A2 /* CoinbaseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C632166C847004E15A2 /* CoinbaseUser.swift */; };
+		50303C662166C93A004E15A2 /* CoinbaseUserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C652166C93A004E15A2 /* CoinbaseUserProtocol.swift */; };
+		50303C682166D5EF004E15A2 /* CoinbaseUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C672166D5EF004E15A2 /* CoinbaseUserPresenter.swift */; };
+		50303C6C2166DEC5004E15A2 /* CoinbaseUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C6B2166DEC5004E15A2 /* CoinbaseUserInteractor.swift */; };
+		50303C6E2166E5C8004E15A2 /* CoinbaseUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C6D2166E5C8004E15A2 /* CoinbaseUserRouter.swift */; };
+		50303C7121671581004E15A2 /* CoinbaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C7021671581004E15A2 /* CoinbaseServices.swift */; };
+		50303C73216715F2004E15A2 /* OAuth2RetryHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C72216715F2004E15A2 /* OAuth2RetryHandler.swift */; };
+		50303C7521671618004E15A2 /* OAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C7421671618004E15A2 /* OAuthManager.swift */; };
+		50303C7B2167173E004E15A2 /* CoinbaseAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C7A2167173E004E15A2 /* CoinbaseAccount.swift */; };
+		50303C7E216718D5004E15A2 /* CoinbaseUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C7D216718D5004E15A2 /* CoinbaseUserViewController.swift */; };
+		5480263CE5F59324A4283595 /* Pods_viper_tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E264627D2A77DA5E30CE409 /* Pods_viper_tutorial.framework */; };
+		E2A3ED3C4FB813FA081EC5ED /* Pods_viper_tutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086F2D576C24D2AECEC8A6B0 /* Pods_viper_tutorialUITests.framework */; };
+		EF2C2BB459C8ED601BB8DD3D /* Pods_viper_tutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF14A4CC404AA3A6B4C8F1 /* Pods_viper_tutorialTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086F2D576C24D2AECEC8A6B0 /* Pods_viper_tutorialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viper_tutorialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12903F70F384278BDA7E7021 /* Pods-viper-tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-tutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-viper-tutorial/Pods-viper-tutorial.release.xcconfig"; sourceTree = "<group>"; };
+		195C2A53C821555F1093BD59 /* Pods-viper-tutorialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-tutorialUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-viper-tutorialUITests/Pods-viper-tutorialUITests.release.xcconfig"; sourceTree = "<group>"; };
+		45824C948692ACE896BAD577 /* Pods-viper-tutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-tutorialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-viper-tutorialTests/Pods-viper-tutorialTests.release.xcconfig"; sourceTree = "<group>"; };
 		50303C2B2166A32D004E15A2 /* viper-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "viper-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50303C2E2166A32D004E15A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50303C302166A32D004E15A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +64,21 @@
 		50303C4A2166A332004E15A2 /* viper-tutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "viper-tutorialUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50303C4E2166A332004E15A2 /* viper_tutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viper_tutorialUITests.swift; sourceTree = "<group>"; };
 		50303C502166A332004E15A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50303C632166C847004E15A2 /* CoinbaseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseUser.swift; sourceTree = "<group>"; };
+		50303C652166C93A004E15A2 /* CoinbaseUserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseUserProtocol.swift; sourceTree = "<group>"; };
+		50303C672166D5EF004E15A2 /* CoinbaseUserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseUserPresenter.swift; sourceTree = "<group>"; };
+		50303C6B2166DEC5004E15A2 /* CoinbaseUserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseUserInteractor.swift; sourceTree = "<group>"; };
+		50303C6D2166E5C8004E15A2 /* CoinbaseUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseUserRouter.swift; sourceTree = "<group>"; };
+		50303C7021671581004E15A2 /* CoinbaseServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseServices.swift; sourceTree = "<group>"; };
+		50303C72216715F2004E15A2 /* OAuth2RetryHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2RetryHandler.swift; sourceTree = "<group>"; };
+		50303C7421671618004E15A2 /* OAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthManager.swift; sourceTree = "<group>"; };
+		50303C7A2167173E004E15A2 /* CoinbaseAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseAccount.swift; sourceTree = "<group>"; };
+		50303C7D216718D5004E15A2 /* CoinbaseUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseUserViewController.swift; sourceTree = "<group>"; };
+		6E264627D2A77DA5E30CE409 /* Pods_viper_tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viper_tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ABF14A4CC404AA3A6B4C8F1 /* Pods_viper_tutorialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viper_tutorialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3F8DCACE44ADC0F1E10F0A /* Pods-viper-tutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-tutorialTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viper-tutorialTests/Pods-viper-tutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFD2DAF23F963D6EAA5D0AEF /* Pods-viper-tutorialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-tutorialUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viper-tutorialUITests/Pods-viper-tutorialUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE8FF6322EE97F160D9E7229 /* Pods-viper-tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-tutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viper-tutorial/Pods-viper-tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5480263CE5F59324A4283595 /* Pods_viper_tutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2C2BB459C8ED601BB8DD3D /* Pods_viper_tutorialTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +102,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2A3ED3C4FB813FA081EC5ED /* Pods_viper_tutorialUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B8E4DB6E06A5AE114B593CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E264627D2A77DA5E30CE409 /* Pods_viper_tutorial.framework */,
+				7ABF14A4CC404AA3A6B4C8F1 /* Pods_viper_tutorialTests.framework */,
+				086F2D576C24D2AECEC8A6B0 /* Pods_viper_tutorialUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		50303C222166A32D004E15A2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +126,8 @@
 				50303C422166A332004E15A2 /* viper-tutorialTests */,
 				50303C4D2166A332004E15A2 /* viper-tutorialUITests */,
 				50303C2C2166A32D004E15A2 /* Products */,
+				78A362ECA2E8A11D54F01F19 /* Pods */,
+				3B8E4DB6E06A5AE114B593CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +146,9 @@
 			children = (
 				50303C2E2166A32D004E15A2 /* AppDelegate.swift */,
 				50303C302166A32D004E15A2 /* ViewController.swift */,
+				50303C6F21671551004E15A2 /* common */,
+				50303C7621671690004E15A2 /* coinbase-account-module */,
+				50303C622166C5B9004E15A2 /* coinbase-user-module */,
 				50303C322166A32D004E15A2 /* Main.storyboard */,
 				50303C352166A332004E15A2 /* Assets.xcassets */,
 				50303C372166A332004E15A2 /* LaunchScreen.storyboard */,
@@ -125,6 +175,122 @@
 			path = "viper-tutorialUITests";
 			sourceTree = "<group>";
 		};
+		50303C5D2166C1AB004E15A2 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				50303C652166C93A004E15A2 /* CoinbaseUserProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		50303C5E2166C1B5004E15A2 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				50303C632166C847004E15A2 /* CoinbaseUser.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		50303C5F2166C529004E15A2 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				50303C6B2166DEC5004E15A2 /* CoinbaseUserInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		50303C602166C532004E15A2 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				50303C672166D5EF004E15A2 /* CoinbaseUserPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		50303C612166C547004E15A2 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				50303C6D2166E5C8004E15A2 /* CoinbaseUserRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		50303C622166C5B9004E15A2 /* coinbase-user-module */ = {
+			isa = PBXGroup;
+			children = (
+				50303C7C21671895004E15A2 /* view */,
+				50303C5F2166C529004E15A2 /* interactor */,
+				50303C602166C532004E15A2 /* presenter */,
+				50303C5E2166C1B5004E15A2 /* entity */,
+				50303C612166C547004E15A2 /* router */,
+				50303C5D2166C1AB004E15A2 /* protocols */,
+			);
+			path = "coinbase-user-module";
+			sourceTree = "<group>";
+		};
+		50303C6F21671551004E15A2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				50303C7021671581004E15A2 /* CoinbaseServices.swift */,
+				50303C72216715F2004E15A2 /* OAuth2RetryHandler.swift */,
+				50303C7421671618004E15A2 /* OAuthManager.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		50303C7621671690004E15A2 /* coinbase-account-module */ = {
+			isa = PBXGroup;
+			children = (
+				50303C77216716D8004E15A2 /* view */,
+				50303C78216716E9004E15A2 /* interactor */,
+				50303C7921671726004E15A2 /* entity */,
+			);
+			path = "coinbase-account-module";
+			sourceTree = "<group>";
+		};
+		50303C77216716D8004E15A2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		50303C78216716E9004E15A2 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		50303C7921671726004E15A2 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				50303C7A2167173E004E15A2 /* CoinbaseAccount.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		50303C7C21671895004E15A2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				50303C7D216718D5004E15A2 /* CoinbaseUserViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		78A362ECA2E8A11D54F01F19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE8FF6322EE97F160D9E7229 /* Pods-viper-tutorial.debug.xcconfig */,
+				12903F70F384278BDA7E7021 /* Pods-viper-tutorial.release.xcconfig */,
+				AC3F8DCACE44ADC0F1E10F0A /* Pods-viper-tutorialTests.debug.xcconfig */,
+				45824C948692ACE896BAD577 /* Pods-viper-tutorialTests.release.xcconfig */,
+				AFD2DAF23F963D6EAA5D0AEF /* Pods-viper-tutorialUITests.debug.xcconfig */,
+				195C2A53C821555F1093BD59 /* Pods-viper-tutorialUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +298,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50303C532166A332004E15A2 /* Build configuration list for PBXNativeTarget "viper-tutorial" */;
 			buildPhases = (
+				55FFAB8B6262292A89C2C373 /* [CP] Check Pods Manifest.lock */,
 				50303C272166A32D004E15A2 /* Sources */,
 				50303C282166A32D004E15A2 /* Frameworks */,
 				50303C292166A32D004E15A2 /* Resources */,
+				EA3D9D5511ED539D1E3EA8D8 /* [CP] Embed Pods Frameworks */,
+				9F794E24A4E126384F04CB2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +318,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50303C562166A332004E15A2 /* Build configuration list for PBXNativeTarget "viper-tutorialTests" */;
 			buildPhases = (
+				9C00759A1C32CE5FF14A8A1C /* [CP] Check Pods Manifest.lock */,
 				50303C3B2166A332004E15A2 /* Sources */,
 				50303C3C2166A332004E15A2 /* Frameworks */,
 				50303C3D2166A332004E15A2 /* Resources */,
+				D4C279D5BA4AD25618B48D23 /* [CP] Embed Pods Frameworks */,
+				2DDC34CFECB8B206D65D43DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +339,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50303C592166A332004E15A2 /* Build configuration list for PBXNativeTarget "viper-tutorialUITests" */;
 			buildPhases = (
+				3E6E40DDEFCC2E6F28C267F6 /* [CP] Check Pods Manifest.lock */,
 				50303C462166A332004E15A2 /* Sources */,
 				50303C472166A332004E15A2 /* Frameworks */,
 				50303C482166A332004E15A2 /* Resources */,
+				02D8592C21CD11662285FDF0 /* [CP] Embed Pods Frameworks */,
+				65DEFFE23B8F19CA91F30BB7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +426,179 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02D8592C21CD11662285FDF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-viper-tutorialUITests/Pods-viper-tutorialUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DDC34CFECB8B206D65D43DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-viper-tutorialTests/Pods-viper-tutorialTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E6E40DDEFCC2E6F28C267F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-viper-tutorialUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55FFAB8B6262292A89C2C373 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-viper-tutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65DEFFE23B8F19CA91F30BB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-viper-tutorialUITests/Pods-viper-tutorialUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C00759A1C32CE5FF14A8A1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-viper-tutorialTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F794E24A4E126384F04CB2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-viper-tutorial/Pods-viper-tutorial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4C279D5BA4AD25618B48D23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-viper-tutorialTests/Pods-viper-tutorialTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA3D9D5511ED539D1E3EA8D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-viper-tutorial/Pods-viper-tutorial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/p2_OAuth2.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-viper-tutorial/Pods-viper-tutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50303C272166A32D004E15A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50303C682166D5EF004E15A2 /* CoinbaseUserPresenter.swift in Sources */,
+				50303C7B2167173E004E15A2 /* CoinbaseAccount.swift in Sources */,
+				50303C7E216718D5004E15A2 /* CoinbaseUserViewController.swift in Sources */,
 				50303C312166A32D004E15A2 /* ViewController.swift in Sources */,
+				50303C642166C847004E15A2 /* CoinbaseUser.swift in Sources */,
+				50303C662166C93A004E15A2 /* CoinbaseUserProtocol.swift in Sources */,
+				50303C7521671618004E15A2 /* OAuthManager.swift in Sources */,
+				50303C6C2166DEC5004E15A2 /* CoinbaseUserInteractor.swift in Sources */,
 				50303C2F2166A32D004E15A2 /* AppDelegate.swift in Sources */,
+				50303C7121671581004E15A2 /* CoinbaseServices.swift in Sources */,
+				50303C73216715F2004E15A2 /* OAuth2RetryHandler.swift in Sources */,
+				50303C6E2166E5C8004E15A2 /* CoinbaseUserRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +769,7 @@
 		};
 		50303C542166A332004E15A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8FF6322EE97F160D9E7229 /* Pods-viper-tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +788,7 @@
 		};
 		50303C552166A332004E15A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12903F70F384278BDA7E7021 /* Pods-viper-tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +807,7 @@
 		};
 		50303C572166A332004E15A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC3F8DCACE44ADC0F1E10F0A /* Pods-viper-tutorialTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +829,7 @@
 		};
 		50303C582166A332004E15A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45824C948692ACE896BAD577 /* Pods-viper-tutorialTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +851,7 @@
 		};
 		50303C5A2166A332004E15A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD2DAF23F963D6EAA5D0AEF /* Pods-viper-tutorialUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +872,7 @@
 		};
 		50303C5B2166A332004E15A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 195C2A53C821555F1093BD59 /* Pods-viper-tutorialUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

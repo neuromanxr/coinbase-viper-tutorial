@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        /* Create ui-view-controller instance*/
+        let notice = CoinbaseUserRouter.createModule()
+        
+        /* Initiating instance of ui-navigation-controller with view-controller */
+        let navigationController = UINavigationController()
+        navigationController.viewControllers = [notice]
+        
+        /* Setting up the root view-controller as ui-navigation-controller */
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

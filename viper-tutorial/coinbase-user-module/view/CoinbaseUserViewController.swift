@@ -19,6 +19,11 @@ class CoinbaseUserViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        presentor?.startFetchingCoinbaseUser()
+        // show progress
+        
+        uiTableView.delegate = self
+        uiTableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -31,6 +36,7 @@ extension CoinbaseUserViewController: PresenterToViewProtocol {
     func showCoinbaseUser(noticeArray: Array<CoinbaseUser>) {
         self.coinbaseUserArrayList = noticeArray
         self.uiTableView.reloadData()
+        // hide progress
         
     }
     
@@ -49,7 +55,8 @@ extension CoinbaseUserViewController: UITableViewDataSource, UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: CoinbaseUserCell.reuseIdentifier, for: indexPath) as! CoinbaseUserCell
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

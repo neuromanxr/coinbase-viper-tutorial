@@ -23,7 +23,7 @@ protocol PresenterToViewProtocol: class {
 
 protocol PresenterToRouterProtocol: class {
     static func createModule()-> CoinbaseUserViewController
-    func pushToCoinbaseUserScreen(navigationConroller:UINavigationController)
+    func pushToCoinbaseAccountScreen(navigationConroller:UINavigationController)
 }
 
 protocol PresenterToInteractorProtocol: class {

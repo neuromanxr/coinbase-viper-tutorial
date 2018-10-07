@@ -9,6 +9,7 @@ target 'viper-tutorial' do
   pod 'Alamofire'
   pod 'p2.OAuth2'
   pod 'Moya'
+  pod 'Reusable'
 
   target 'viper-tutorialTests' do
     inherit! :search_paths

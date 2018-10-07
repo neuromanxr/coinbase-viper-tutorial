@@ -29,8 +29,8 @@ class CoinbaseUserRouter: PresenterToRouterProtocol {
         return UIStoryboard(name:"Main",bundle: Bundle.main)
     }
     
-    func pushToCoinbaseUserScreen(navigationConroller: UINavigationController) {
-        let coinbaseUserModule = CoinbaseUserRouter.createModule()
-        navigationConroller.pushViewController(coinbaseUserModule, animated: true)
+    func pushToCoinbaseAccountScreen(navigationConroller: UINavigationController) {
+        let coinbaseAccountModule = CoinbaseUserRouter.createModule()
+        navigationConroller.pushViewController(coinbaseAccountModule, animated: true)
     }
 }

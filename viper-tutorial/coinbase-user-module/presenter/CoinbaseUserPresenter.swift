@@ -14,11 +14,11 @@ class CoinbaseUserPresenter: ViewToPresenterProtocol {
     var router: PresenterToRouterProtocol?
     
     func startFetchingCoinbaseUser() {
-        
+        interactor?.fetchCoinbaseUser()
     }
     
     func showAnotherController(navigationController: UINavigationController) {
-        
+        router?.pushToCoinbaseAccountScreen(navigationConroller: navigationController)
     }
 }
 

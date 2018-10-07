@@ -24,6 +24,7 @@
 		50303C7521671618004E15A2 /* OAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C7421671618004E15A2 /* OAuthManager.swift */; };
 		50303C7B2167173E004E15A2 /* CoinbaseAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C7A2167173E004E15A2 /* CoinbaseAccount.swift */; };
 		50303C7E216718D5004E15A2 /* CoinbaseUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C7D216718D5004E15A2 /* CoinbaseUserViewController.swift */; };
+		50303C802169C095004E15A2 /* CoinbaseUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50303C7F2169C095004E15A2 /* CoinbaseUserCell.swift */; };
 		5480263CE5F59324A4283595 /* Pods_viper_tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E264627D2A77DA5E30CE409 /* Pods_viper_tutorial.framework */; };
 		E2A3ED3C4FB813FA081EC5ED /* Pods_viper_tutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086F2D576C24D2AECEC8A6B0 /* Pods_viper_tutorialUITests.framework */; };
 		EF2C2BB459C8ED601BB8DD3D /* Pods_viper_tutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ABF14A4CC404AA3A6B4C8F1 /* Pods_viper_tutorialTests.framework */; };
@@ -74,6 +75,7 @@
 		50303C7421671618004E15A2 /* OAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthManager.swift; sourceTree = "<group>"; };
 		50303C7A2167173E004E15A2 /* CoinbaseAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseAccount.swift; sourceTree = "<group>"; };
 		50303C7D216718D5004E15A2 /* CoinbaseUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseUserViewController.swift; sourceTree = "<group>"; };
+		50303C7F2169C095004E15A2 /* CoinbaseUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinbaseUserCell.swift; sourceTree = "<group>"; };
 		6E264627D2A77DA5E30CE409 /* Pods_viper_tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viper_tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABF14A4CC404AA3A6B4C8F1 /* Pods_viper_tutorialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_viper_tutorialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3F8DCACE44ADC0F1E10F0A /* Pods-viper-tutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-viper-tutorialTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-viper-tutorialTests/Pods-viper-tutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				50303C7D216718D5004E15A2 /* CoinbaseUserViewController.swift */,
+				50303C7F2169C095004E15A2 /* CoinbaseUserCell.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -573,6 +577,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/p2_OAuth2.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,6 +596,7 @@
 				50303C7B2167173E004E15A2 /* CoinbaseAccount.swift in Sources */,
 				50303C7E216718D5004E15A2 /* CoinbaseUserViewController.swift in Sources */,
 				50303C312166A32D004E15A2 /* ViewController.swift in Sources */,
+				50303C802169C095004E15A2 /* CoinbaseUserCell.swift in Sources */,
 				50303C642166C847004E15A2 /* CoinbaseUser.swift in Sources */,
 				50303C662166C93A004E15A2 /* CoinbaseUserProtocol.swift in Sources */,
 				50303C7521671618004E15A2 /* OAuthManager.swift in Sources */,
@@ -775,10 +781,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W52XA7N9L8;
 				INFOPLIST_FILE = "viper-tutorial/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nivlek.viper-tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -794,10 +797,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W52XA7N9L8;
 				INFOPLIST_FILE = "viper-tutorial/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nivlek.viper-tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -814,11 +814,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W52XA7N9L8;
 				INFOPLIST_FILE = "viper-tutorialTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nivlek.viper-tutorialTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -836,11 +832,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W52XA7N9L8;
 				INFOPLIST_FILE = "viper-tutorialTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nivlek.viper-tutorialTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -857,11 +849,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W52XA7N9L8;
 				INFOPLIST_FILE = "viper-tutorialUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nivlek.viper-tutorialUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -878,11 +866,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W52XA7N9L8;
 				INFOPLIST_FILE = "viper-tutorialUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nivlek.viper-tutorialUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
